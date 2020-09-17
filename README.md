@@ -47,7 +47,7 @@ The data used in the analysis is organized by source. Each source has its own se
 - **CZ:** This folder contains the USDA commuting zone to county crosswalk created by the USDA (https://www.ers.usda.gov/data-products/commuting-zones-and-labor-market-areas/; accessed July 1, 2020)
 - **dol:** This folder contains state UI replacement rates calculated by the Department of Labor (https://oui.doleta.gov/unemploy/ui_replacement_rates.asp; accessed June 16, 2020)
 - **google:** This folder contains the Google Mobility Report (https://www.google.com/covid19/mobility/; accessed May 21, 2020)
-- **kong-prinze:** This folder contains the business closure dates as reported in Kong and Prinz (2020), hand-coded September 9, 2020)
+- **kong-prinz:** This folder contains the business closure dates as reported in Kong and Prinz (2020), hand-coded September 9, 2020)
 - **nytimes:** This folder contains reported county-level SAH order dates as reported by the *New York Times*. (https://www.nytimes.com/interactive/2020/us/coronavirus-stay-at-home-order.html; accessed various dates using [Wayback Machine](https://archive.org/web/)). This folder also contains presidential vote shares by state (https://www.nytimes.com/elections/2016/results/president; accessed and hand-coded June 17, 2020)
 - **opportunitylab:** This folder contains data from the *Opportunity Insights Economic Tracker* (https://github.com/OpportunityInsights/EconomicTracker; downloaded September 4, 2020)
 - **stata:** This folder contains intermediate files created when running `run_all.do`
