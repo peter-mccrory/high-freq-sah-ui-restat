@@ -4,7 +4,7 @@
 
 ### Intro
 
-This repository contains all the data and code required to replicate the analysis that appears in "Unemployment Effects of Stay-at-Home Orders: Evidence from High Frequency Claims Data".
+This repository contains all the data and code required to replicate the analysis in "Unemployment Effects of Stay-at-Home Orders: Evidence from High Frequency Claims Data".
 
 The repository is organized as follows:
   - **./data/**: Contains the raw data as well as the compiled Stata datasets used in the analysis. A description of each file follows below.
