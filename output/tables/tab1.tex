@@ -1,0 +1,31 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{5}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         &\multicolumn{1}{c}{(5)}         \\
+            &   Bivariate         &       Covid         &  Pol. Econ.         &    Sectoral         &         All         \\
+\hline
+SAH Exposure thru Apr. 4&      0.0194\sym{***}&      0.0192\sym{**} &      0.0178\sym{**} &      0.0209\sym{***}&      0.0187\sym{**} \\
+            &   (0.00664)         &   (0.00742)         &   (0.00818)         &   (0.00637)         &   (0.00714)         \\
+COVID-19 Cases per 1K&                     &    -0.00213         &                     &                     &     0.00194         \\
+            &                     &   (0.00621)         &                     &                     &   (0.00676)         \\
+Excess Deaths per 1K&                     &      0.0446         &                     &                     &      0.0480         \\
+            &                     &     (0.109)         &                     &                     &     (0.113)         \\
+Share Age 60+&                     &       0.237         &                     &                     &                     \\
+            &                     &     (0.281)         &                     &                     &                     \\
+Avg. UI Replacement Rate&                     &                     &      0.0719         &                     &      0.0726         \\
+            &                     &                     &    (0.0794)         &                     &    (0.0787)         \\
+2016 Trump Vote Share&                     &                     &     -0.0225         &                     &                     \\
+            &                     &                     &    (0.0508)         &                     &                     \\
+Work at Home Index&                     &                     &                     &      -0.331\sym{+}  &      -0.388\sym{+}  \\
+            &                     &                     &                     &     (0.192)         &     (0.229)         \\
+Bartik-Predicted Job Loss&                     &                     &                     &      -2.401         &                     \\
+            &                     &                     &                     &     (7.528)         &                     \\
+Constant    &      0.0815\sym{***}&      0.0357         &      0.0621         &       0.181\sym{**} &       0.182\sym{**} \\
+            &   (0.00848)         &    (0.0543)         &    (0.0481)         &    (0.0742)         &    (0.0821)         \\
+\hline
+Adj. R-Square&      0.0829         &      0.0434         &      0.0618         &      0.0966         &      0.0763         \\
+No. Obs.    &          51         &          51         &          51         &          51         &          51         \\
+\hline\hline
+\end{tabular}
+}

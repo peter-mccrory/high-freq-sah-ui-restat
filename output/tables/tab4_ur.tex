@@ -1,0 +1,25 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{4}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         \\
+            & $\Delta UR$         & $\Delta UR$         & $\Delta UR$         & $\Delta UR$         \\
+\hline
+SAH Exposure thru Apr. 15&       1.574\sym{***}&       1.382\sym{***}&       1.570\sym{***}&       0.944\sym{***}\\
+            &     (0.400)         &     (0.331)         &     (0.331)         &     (0.216)         \\
+Covid-19 Cases per 1K Emp&                     &                     &   -0.000239         &      0.0110         \\
+            &                     &                     &   (0.00468)         &   (0.00806)         \\
+Work at Home Index&                     &                     &      -12.29\sym{**} &      -5.437         \\
+            &                     &                     &     (5.336)         &     (5.089)         \\
+Constant    &       4.114\sym{***}&       4.425\sym{***}&       7.922\sym{***}&       6.689\sym{***}\\
+            &     (0.888)         &     (0.642)         &     (2.005)         &     (1.863)         \\
+\hline
+Dep Mean    &        7.69         &        7.11         &        7.11         &        7.32         \\
+States      &       51.00         &       12.00         &       12.00         &       12.00         \\
+State FE    &          No         &         Yes         &         Yes         &         Yes         \\
+CZ FE       &          No         &          No         &          No         &         Yes         \\
+Adj. R-Square&        0.13         &        0.39         &        0.40         &        0.59         \\
+No. Obs.    &     3141.00         &     1116.00         &     1116.00         &      453.00         \\
+\hline\hline
+\end{tabular}
+}

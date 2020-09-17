@@ -1,0 +1,24 @@
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{tabular}{l*{4}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{(1)}         &\multicolumn{1}{c}{(2)}         &\multicolumn{1}{c}{(3)}         &\multicolumn{1}{c}{(4)}         \\
+\hline
+SAH Exposure Current Week&     0.00919\sym{**} &      0.0101\sym{***}&     0.00997\sym{***}&      0.0125\sym{***}\\
+            &   (0.00350)         &   (0.00321)         &   (0.00329)         &   (0.00353)         \\
+SAH Exposure First Lag&                     &    -0.00293         &    -0.00367         &    -0.00299         \\
+            &                     &   (0.00359)         &   (0.00358)         &   (0.00372)         \\
+SAH Exposure Second Lag&                     &     0.00245         &    -0.00115         &    0.000809         \\
+            &                     &   (0.00230)         &   (0.00302)         &   (0.00332)         \\
+\hline
+State FE    &           Y         &           Y         &           Y         &           N         \\
+Week FE     &           Y         &           Y         &           Y         &           Y         \\
+Post-March 21 X Work at Home Index&           N         &           N         &           Y         &           Y         \\
+Post-March 21 X Excess Deaths per 1K&           N         &           N         &           Y         &           Y         \\
+Post-March 21 X COVID-19 Cases per 1K&           N         &           N         &           Y         &           Y         \\
+Post-March 21 X Avg. UI Replacement Rate&           N         &           N         &           Y         &           Y         \\
+Adj. R-Square&       0.826         &       0.822         &       0.831         &       0.801         \\
+No. Obs.    &         765         &         663         &         663         &         663         \\
+\hline\hline
+\end{tabular}
+}
