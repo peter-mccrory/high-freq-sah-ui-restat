@@ -7,11 +7,11 @@
 This repository contains all the data and code required to replicate the analysis in "Unemployment Effects of Stay-at-Home Orders: Evidence from High Frequency Claims Data".
 
 The repository is organized as follows:
-  - **./data/**: Contains the raw data as well as the compiled Stata datasets used in the analysis. A description of each file follows below.
+  - **./data/**: Contains the raw data as well as the compiled Stata datasets used in the analysis. A description of each raw data file follows below.
   - **./src/**: All the code necessary to do the analysis is contained in this folder. There are three sub-directories for each of the languages used. A description of each file is contained below. The empirical analysis is done in Stata, the theoretical analysis is done in Matlab, and some of the figures are created in a Jupyter notebook using a Python 3 kernel.
-  - **./output/**: This folder contains the plots and tables appearing in the paper. Running the code (in the order described below) will reproduce all such analysis.
+  - **./output/**: This folder contains the plots and tables appearing in the paper. Running the code (in the order described below) will reproduce all analysis from the paper (main-text and appendix).
 
-The root directory also contains a `.gitignore` file for ignoring files for the Github repository (code also available at: [https://github.com/peter-mccrory/high-freq-sah-ui-restat](https://github.com/peter-mccrory/high-freq-sah-ui-restat)).
+The root directory also contains a `.gitignore` file for ignoring files for the Github repository (this repository is hosted at: [https://github.com/peter-mccrory/high-freq-sah-ui-restat](https://github.com/peter-mccrory/high-freq-sah-ui-restat)).
 
 All scripts were verified to work with the following software: (i) Stata 14, (ii) Python 3.8.3 installed with Anaconda, and (iii) Matlab 2020b.
 
@@ -29,12 +29,12 @@ To replicate the analysis in Baek, McCrory, Messer, Mui (2020) do the following:
     - *step7_eventstudies:* This file estimates event study regressions described in the online appendix, saving the figures in the online appendix to `./output/plots/`.
     - *step8_early_late_figure:* This file creates Figure 3 in the main text, saving it to `./output/plots/`
     - *step9_rel-implied-agg:* This file calculates the relative-implied aggregate employment loss attributable to SAH orders.
-- **Theoretical Results:** From the command line Matlab and while located in the `./src/matlab/`, using [Dynare](https://www.dynare.org/), run baseline.mod with `dynare baseline`. This will create and save Figure 5 to `./output/plots/`. It will also calculate and report numbers appearing in Table 2 of the main text.
+- **Theoretical Results:** From the command line Matlab and while located in the `./src/matlab/` directory, using [Dynare](https://www.dynare.org/), run baseline.mod with the command `dynare baseline`. This will create and save Figure 5 to `./output/plots/`. It will also calculate and report numbers appearing in Table 2 of the main text.
 - **Additional Figures:** To make all remaining figures in the paper (main text and online appendix), run `./src/python/QCEW.ipynb` in a Jupyter notebook (Python 3 kernel). This will create and save figures to `./output/plots/`. Note: the user will need to install plotly-related packages to their conda distribution; if these are not already installed, an error will be produced prompting them to install the appropriate package (e.g. `cufflinks`, `plotly-orca`).
 
 ### Brief Description of ./data/ Directory Files
 ****
-The data used in the analysis is organized by source. Each source has its own separate folder, which are described completely below:
+The data used in the analysis is organized by source. Each source has its own separate folder, each of which is described in brief below:
 
 - **bls:** This folder contains five data files used to build the state and county-level datasets used in the paper
   - *county_qcew_emp.csv*: This file reports 2018 county-level employment from the Quarterly Census of Employment and Wages (QCEW). `./src/python/QCEW.ipynb` queries the QCEW data and creates this file. These data were downloaded April 10, 2020.
